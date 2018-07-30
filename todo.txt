@@ -1,5 +1,7 @@
 # Things That Need doing
 
+- update SVG icon strings in svg-icons.php
+
 - refactor the file tree -- how am I really organizing Things
 - refactor SASS structure
 - find code that needs to be moved to basic functionality plugin

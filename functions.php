@@ -20,6 +20,17 @@ require get_template_directory() . '/inc/cleanup.php';
 /* WordPress default tweaks */
 require get_template_directory() . '/inc/tweaks.php';
 
+/* Support for ancient browsers, if needed */
+// require get_template_directory() . '/inc/ancient-support.php';
+
+
+
+/* Custom SVG Icon Library Solution */
+require get_template_directory() . '/inc/svg-icons.php';
+
+
+
+
 
 
  /* Queue up custom functions */
@@ -60,8 +71,6 @@ if ( ! function_exists( 'bkb_setup' ) ) :
     /* Uncomment for POST FORMATS -- for God's sake, don't use all of them */
     // add_theme_support( 'post-formats' , array( 'aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat') )
 
-    /* Uncomment for CUSTOM POST TYPES */
-    // require_once( '/inc/custom-post-type.php' );
 
 
 
@@ -118,8 +127,7 @@ function bkb_custom_image_sizes( $sizes ) {
 }
 //add_filter( 'image_size_names_choose', 'bkb_custom_image_sizes' );
 
-// cleaning up random code around images
-add_filter( 'the_content', 'bkb_filter_ptags_on_images' );
+
 
 
 /**
