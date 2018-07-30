@@ -20,6 +20,12 @@ require get_template_directory() . '/inc/cleanup.php';
 /* WordPress default tweaks */
 require get_template_directory() . '/inc/tweaks.php';
 
+
+
+
+
+
+
 /* Support for ancient browsers, if needed */
 // require get_template_directory() . '/inc/ancient-support.php';
 
