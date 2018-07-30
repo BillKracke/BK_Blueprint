@@ -1,0 +1,18 @@
+// CONFIG
+@import "assets/config";
+
+
+body#tinymce.wp-editor {
+/* "RESET" -- normalization */
+@import "assets/reset";
+
+/* Typography & Links */
+@import "assets/components/typography";
+
+/* Tables */
+@import "assets/components/tables";
+
+/* buttons */
+@import "assets/components/buttons";
+
+}

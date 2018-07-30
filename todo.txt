@@ -1,0 +1,50 @@
+# Things That Need doing
+
+- refactor the file tree -- how am I really organizing Things
+- refactor SASS structure
+- find code that needs to be moved to basic functionality plugin
+- check template cascade to make sure that I have bare minimum of pages and no more
+- add a front-page, because that always seems to be needed
+- consider a way to add recommended plugins
+- add ARIA labels -- https://a11yproject.com/posts/aria-landmark-roles/ --- https://a11yproject.com/checklist
+
+
+
+https://www.noupe.com/wordpress/wordpress-20-indispensable-code-snippets-for-your-functions-php-95343.html
+https://www.templatemonster.com/blog/wordpress-code-snippets/
+https://www.wpkube.com/code-snippets-wordpress/
+
+
+
+
+
+File tree
+
+root
+ - components
+    - buttons
+    - gravity_forms (TODO: Need a Gravity Forms reset that works)
+    - sliders
+    - navigation
+    - icons
+    - typography
+    - tables
+- layouts
+    - header
+    - footer
+    - page-generic
+    - page-specific
+- templates-page
+- templates-content
+- SASS
+    - style.scss
+    - editor-style.scss
+    - colors.scss
+    - variables.scss
+    - mixins.scss
+    - utilities.scss
+- inc
+    - extra functions.php stuff
+
+functionality-plugin (seperate file/repo)
+

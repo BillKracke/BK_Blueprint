@@ -1,0 +1,24 @@
+// I decided to forego a grid system. Certainly handy when you need it,
+// but odds are -- you just need some functions so you can build what you need
+// and forget the rest.
+//
+// pattern is:
+//
+// grid-container (the mixin)
+//   grid-items (targeted by mixin)
+//
+//   grid-container(0) sets standard flex-box, define widths on children
+
+
+@mixin grid-container($numberOfCols) {
+  display: flex;
+  flex-wrap: wrap;
+
+  & > * {
+    display: block;
+    flex: 1 1 auto; /* Default for IE10 bug */
+
+    @if $numberOfCols == 0 { flex-grow: 0; }
+    @else { width: 100% / $numberOfCols; }
+  }
+}

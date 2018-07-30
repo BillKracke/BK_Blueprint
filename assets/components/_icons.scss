@@ -1,0 +1,360 @@
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+.icon-plus {
+  width: 0.7857142857142857em;
+}
+
+.icon-question {
+  width: 0.62em;
+}
+
+.icon-minus {
+  width: 0.7857142857142857em;
+}
+
+.icon-search {
+  width: 0.9285714285714285em;
+}
+
+.icon-cog {
+  width: 0.8571428571428571em;
+}
+
+.icon-play-circle-o {
+  width: 0.8571428571428571em;
+}
+
+.icon-tag {
+  width: 0.8454285714285714em;
+}
+
+.icon-map-marker {
+  width: 0.5714285714285714em;
+}
+
+.icon-play {
+  width: 0.7896428571428571em;
+}
+
+.icon-chevron-left {
+  width: 0.75em;
+}
+
+.icon-chevron-right {
+  width: 0.6785714285714285em;
+}
+
+.icon-plus-circle {
+  width: 0.8571428571428571em;
+}
+
+.icon-minus-circle {
+  width: 0.8571428571428571em;
+}
+
+.icon-times-circle {
+  width: 0.8571428571428571em;
+}
+
+.icon-check-circle {
+  width: 0.8571428571428571em;
+}
+
+.icon-question-circle {
+  width: 0.8571428571428571em;
+}
+
+.icon-info-circle {
+  width: 0.8571428571428571em;
+}
+
+.icon-times-circle-o {
+  width: 0.8571428571428571em;
+}
+
+.icon-check-circle-o {
+  width: 0.8571428571428571em;
+}
+
+.icon-ban {
+  width: 0.8571428571428571em;
+}
+
+.icon-arrow-left {
+  width: 0.8928571428571428em;
+}
+
+.icon-arrow-right {
+  width: 0.8214285714285714em;
+}
+
+.icon-arrow-up {
+  width: 0.9285714285714285em;
+}
+
+.icon-arrow-down {
+  width: 0.9285714285714285em;
+}
+
+.icon-exclamation-circle {
+  width: 0.8571428571428571em;
+}
+
+.icon-calendar {
+  width: 0.9285714285714285em;
+}
+
+.icon-shopping-cart {
+  width: 0.9285714285714285em;
+}
+
+.icon-twitter-square {
+  width: 0.8571428571428571em;
+}
+
+.icon-facebook-square {
+  width: 0.8571428571428571em;
+}
+
+.icon-cogs {
+  width: 1.0714285714285714em;
+}
+
+.icon-linkedin-square {
+  width: 0.8571428571428571em;
+}
+
+.icon-thumb-tack {
+  width: 0.6428571428571428em;
+}
+
+.icon-phone {
+  width: 0.7857142857142857em;
+}
+
+.icon-phone-square {
+  width: 0.8571428571428571em;
+}
+
+.icon-twitter {
+  width: 0.9285714285714285em;
+}
+
+.icon-facebook {
+  width: 0.5881428571428571em;
+}
+
+.icon-arrow-circle-left {
+  width: 0.8571428571428571em;
+}
+
+.icon-arrow-circle-right {
+  width: 0.8571428571428571em;
+}
+
+.icon-arrow-circle-up {
+  width: 0.8571428571428571em;
+}
+
+.icon-arrow-circle-down {
+  width: 0.8571428571428571em;
+}
+
+.icon-group {
+  width: 1.0714285714285714em;
+}
+
+.icon-bars {
+  width: 0.8571428571428571em;
+}
+
+.icon-pinterest-square {
+  width: 0.8571428571428571em;
+}
+
+.icon-google-plus-square {
+  width: 0.8571428571428571em;
+}
+
+.icon-google-plus {
+  width: 1.2857142857142856em;
+}
+
+.icon-caret-down {
+  width: 0.5714285714285714em;
+}
+
+.icon-caret-up {
+  width: 0.5714285714285714em;
+}
+
+.icon-caret-left {
+  width: 0.39285714285714285em;
+}
+
+.icon-caret-right {
+  width: 0.3214285714285714em;
+}
+
+.icon-sort {
+  width: 0.5714285714285714em;
+}
+
+.icon-linkedin {
+  width: 0.8571428571428571em;
+}
+
+.icon-plus-square {
+  width: 0.8571428571428571em;
+}
+
+.icon-angle-double-left {
+  width: 0.5892857142857143em;
+}
+
+.icon-angle-double-right {
+  width: 0.5535714285714285em;
+}
+
+.icon-angle-double-up {
+  width: 0.6428571428571428em;
+}
+
+.icon-angle-double-down {
+  width: 0.6428571428571428em;
+}
+
+.icon-angle-left {
+  width: 0.375em;
+}
+
+.icon-angle-right {
+  width: 0.33928571428571425em;
+}
+
+.icon-angle-up {
+  width: 0.6428571428571428em;
+}
+
+.icon-angle-down {
+  width: 0.6428571428571428em;
+}
+
+.icon-quote-left {
+  width: 0.9285714285714285em;
+}
+
+.icon-quote-right {
+  width: 0.9285714285714285em;
+}
+
+.icon-info {
+  width: 0.3571428571428571em;
+}
+
+.icon-exclamation {
+  width: 0.3571428571428571em;
+}
+
+.icon-chevron-circle-left {
+  width: 0.8571428571428571em;
+}
+
+.icon-chevron-circle-right {
+  width: 0.8571428571428571em;
+}
+
+.icon-chevron-circle-up {
+  width: 0.8571428571428571em;
+}
+
+.icon-chevron-circle-down {
+  width: 0.8571428571428571em;
+}
+
+.icon-ellipsis-h {
+  width: 0.7857142857142857em;
+}
+
+.icon-ellipsis-v {
+  width: 0.21428571428571427em;
+}
+
+.icon-minus-square {
+  width: 0.8571428571428571em;
+}
+
+.icon-minus-square-o {
+  width: 0.7857142857142857em;
+}
+
+.icon-youtube-square {
+  width: 0.8571428571428571em;
+}
+
+.icon-youtube {
+  width: 0.8571428571428571em;
+}
+
+.icon-instagram {
+  width: 0.8571428571428571em;
+}
+
+.icon-plus-square-o {
+  width: 0.7857142857142857em;
+}
+
+.icon-envelope-square {
+  width: 0.8571428571428571em;
+}
+
+.icon-toggle-off {
+  width: 1.1428571428571428em;
+}
+
+.icon-toggle-on {
+  width: 1.1428571428571428em;
+}
+
+.icon-facebook-official {
+  width: 0.8571428571428571em;
+}
+
+.icon-shopping-basket {
+  width: 1.1428571428571428em;
+}
+
+.icon-question-circle-o {
+  width: 0.8571428571428571em;
+}
+
+.icon-snapchat-ghost {
+  width: 0.9285714285714285em;
+}
+
+.icon-snapchat-square {
+  width: 0.8571428571428571em;
+}
+
+.icon-address-card {
+  width: 1.1428571428571428em;
+}
+
+.icon-address-card-o {
+  width: 1.1428571428571428em;
+}
