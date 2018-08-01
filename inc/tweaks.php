@@ -2,6 +2,7 @@
 
 add_action( 'after_setup_theme', 'bkb_content_width', 0 );
 add_filter( 'the_content', 'bkb_filter_ptags_on_images' );
+// add_filter('excerpt_length', 'bkb_new_excerpt_length');
 // add_filter( 'excerpt_more', 'bkb_excerpt_more' );
 add_filter( 'body_class', 'bkb_body_classes' );
 
@@ -24,6 +25,11 @@ function bkb_content_width() {
 // remove the p from around imgs (http://css-tricks.com/snippets/wordpress/remove-paragraph-tags-from-around-images/)
 function bkb_filter_ptags_on_images($content){
 	return preg_replace('/<p>\s*(<a .*>)?\s*(<img .* \/>)\s*(<\/a>)?\s*<\/p>/iU', '\1\2\3', $content);
+}
+
+
+function bkb_new_excerpt_length($length) {
+    return 150;
 }
 
 // This removes the annoying […] to a Read More link

@@ -1,20 +1,10 @@
 # Things That Need doing
 
-- update SVG icon strings in svg-icons.php
-
-- refactor the file tree -- how am I really organizing Things
-- refactor SASS structure
-- find code that needs to be moved to basic functionality plugin
 - check template cascade to make sure that I have bare minimum of pages and no more
 - add a front-page, because that always seems to be needed
 - consider a way to add recommended plugins
 - add ARIA labels -- https://a11yproject.com/posts/aria-landmark-roles/ --- https://a11yproject.com/checklist
 
-
-
-https://www.noupe.com/wordpress/wordpress-20-indispensable-code-snippets-for-your-functions-php-95343.html
-https://www.templatemonster.com/blog/wordpress-code-snippets/
-https://www.wpkube.com/code-snippets-wordpress/
 
 
 

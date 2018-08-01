@@ -1,1 +1,1 @@
-// @codekit-prepend "../assets/components/_typography.js", "../assets/components/_icons.js", "../assets/components/_navigation.js";
+// @codekit-prepend "../components/typography/_typography.js", "../components/icons/_icons.js", "../components/navigation/_navigation.js";

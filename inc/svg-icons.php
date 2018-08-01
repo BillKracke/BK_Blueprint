@@ -12,16 +12,8 @@
  * @param  $icon_name   string after 'icon-'' in icomoon
  * @return string       SVG use call to svg sprite in /svg/
  */
-function get_bkb_icon($icon_name) {
+function bkb_icon($icon_name) {
 
-    return '<svg class="icon icon-' . $icon_name .'"><use xlink:href="'.  get_stylesheet_directory() .'/svg/sprite.svg#icon-' . $icon_name .'"></use></svg>';
-  }
+  include get_stylesheet_directory() . '/components/icons/' . $icon_name . '.svg';  
   
-  
-  /**
-   * Echo version of get_bkb_icon
-   * @param  $icon_name    string after 'icon-'' in icomoon
-   */
-  function the_bkb_icon($icon_name){
-    echo get_bkb_icon($icon_name);
   }

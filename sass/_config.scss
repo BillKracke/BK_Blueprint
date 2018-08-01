@@ -1,48 +1,46 @@
 // SITE VARIABLES
 
-// Do NOT overdo it here. Variables are for things that will be reused FREQUENTLY. 
+// Do NOT overdo it here. Variables are for things that will be reused FREQUENTLY.
 // If the standard width is 1200px, gutter 2 = 24, 3=36, 4=48
 // 1440px?  1.666 = 24, 2.5 = 36, 3.3333 = 48
 
 /* GRID */
-$jeet: (
-  gutter: 3.3333, // percentage gutter (of container)
-  max-width: 1440px,
-);
+$jeet: (gutter: 3.3333, max-width: 1440px);
 
 $base-gap: 24px; // the faux "grid" between elements gutter could be 2x this
-
 
 // SITE SPECIFIC COLORS
 // Named colors are easier than "tertiary-brand"
 // Consider namespacing -  $bk-blue
 
-
-
 // Standard Color Library
 // ======================
 
 // Grayscale
-$white     	: #ffffff;
-$offwhite  	: #eeeeee;
-$lightergrey: #cccccc; $lightergray: $lightergrey; // can't decide if I should spell like a Canadian or not
-$lightgrey 	: #999999; $lightgray: $lightgrey;
-$grey      	: #666666; $gray : $grey;
-$darkgrey  	: #333333; $darkgray : $darkgrey;
-$offblack  	: #111111;
-$black     	: #000000;
+$white: #ffffff;
+$offwhite: #eeeeee;
+$lightergrey: #cccccc;
+$lightergray: $lightergrey; // can't decide if I should spell like a Canadian or not
+$lightgrey: #999999;
+$lightgray: $lightgrey;
+$grey: #666666;
+$gray: $grey;
+$darkgrey: #333333;
+$darkgray: $darkgrey;
+$offblack: #111111;
+$black: #000000;
 
 // Rainbow http://clrs.cc/
-$red       : #FF4136;
-$maroon    : #85144B;
-$orange    : #FF851B;
-$yellow    : #FFDC00;
-$green     : #2ECC40;
-$lightblue : #7FDBFF;
-$blue      : #0074D9;
-$navy      : #001F3F;
-$purple    : #B10DC9;
-$pink      : #F012BE;
+$red: #ff4136;
+$maroon: #85144b;
+$orange: #ff851b;
+$yellow: #ffdc00;
+$green: #2ecc40;
+$lightblue: #7fdbff;
+$blue: #0074d9;
+$navy: #001f3f;
+$purple: #b10dc9;
+$pink: #f012be;
 
 // a few things about the font styling below
 // if you are using Google Web fonts, use this tool to find
@@ -52,9 +50,7 @@ $pink      : #F012BE;
 // Requires https://github.com/typekit/webfontloader
 // (Already baked in, see functions.php and theme.js)
 
-
 // Set your baseline here
-
 
 body,
 button,
@@ -65,37 +61,34 @@ textarea {
 	font-family: Tahoma, sans-serif;
 	font-size: 16px;
 	line-height: 1.5;
-	letter-spacing:0.4px;
+	letter-spacing: 0.4px;
 	font-feature-settings: "kern", "liga", "clig", "calt"; // make it pretty
-
 
 	.wf-active & {
 		font-family: Tahoma, sans-serif;
-		letter-spacing:0;
+		letter-spacing: 0;
 	}
 }
-
-
 
 // EASY SOCIAL MEDIA - https://www.competethemes.com/blog/social-media-colors/
 // Here if you need them
 
-$twitter    : #00aced;
-$facebook   : #3b5998;
-$googleplus : #dd4b39;
-$pinterest  : #cb2027;
-$linkedin   : #007bb6;
-$youtube    : #bb0000;
-$vimeo      : #aad450;
-$tumblr     : #32506d;
-$instagram  : #517fa4;
-$flickr     : #ff0084;
-$dribbble   : #ea4c89;
-$quora      : #a82400;
-$foursquare : #0072b1;
-$vk         : #45668e;
-$wordpress  : #21759b;
-$stumbleupon: #EB4823;
-$yahoo      : #7B0099;
-$blogger    : #fb8f3d;
-$soundcloud : #ff3a00;
+$twitter: #00aced;
+$facebook: #3b5998;
+$googleplus: #dd4b39;
+$pinterest: #cb2027;
+$linkedin: #007bb6;
+$youtube: #bb0000;
+$vimeo: #aad450;
+$tumblr: #32506d;
+$instagram: #517fa4;
+$flickr: #ff0084;
+$dribbble: #ea4c89;
+$quora: #a82400;
+$foursquare: #0072b1;
+$vk: #45668e;
+$wordpress: #21759b;
+$stumbleupon: #eb4823;
+$yahoo: #7b0099;
+$blogger: #fb8f3d;
+$soundcloud: #ff3a00;

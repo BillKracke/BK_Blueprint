@@ -1,0 +1,83 @@
+.home {
+	/* # Depends on the site’s “Front page displays” Reading Settings ‘show_on_front’ and ‘page_on_front’. \n If you set a static page for the front page of your site, this function will return true when viewing that page. */
+}
+
+.blog {
+	/* # Add if blog view homepage, otherwise false. */
+}
+
+.archive {
+	/* For # Month, Year, Category, Author, Post Type archive */
+}
+
+.date {
+	/* # For date archive */
+}
+
+.search {
+	/* # For search */
+}
+
+.search-results {
+	/* # If found posts in search result */
+}
+
+.search-no-results {
+	/* # If NOT found any posts in search result */
+}
+
+.paged {
+	/* # On paged result and not for the first page */
+}
+
+.attachment {
+	/* # On attachment page */
+}
+
+.error404 {
+	/* # On 404 page */
+}
+
+.single {
+	/* # Add for any post type, except {attachments} and {pages} */
+}
+
+.post-type-archive {
+	/* # post type archive page */
+}
+
+.author {
+	/* # author page */
+}
+
+.category {
+	/* # category page */
+}
+
+.tag {
+	/* # Tags page */
+}
+
+.page {
+	/* # existing single page */
+}
+
+.page-parent {
+	/* # Parent page only */
+}
+
+.page-child {
+	/* # Child page only */
+}
+
+.page-template {
+	/* # Page templates only */
+}
+
+.page-template-default {
+	/* # Default page templates only */
+}
+
+.logged-in {
+	/* # Logged in user */
+}
