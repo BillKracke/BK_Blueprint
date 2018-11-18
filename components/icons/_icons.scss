@@ -1,10 +1,10 @@
 .icon {
-	display: inline-block;
-	width: 1em;
-	height: 1em;
-	stroke-width: 0;
-	stroke: currentColor;
-	fill: currentColor;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
 }
 
 /* ==========================================
@@ -15,122 +15,218 @@ Single-colored icons can be modified like so:
 }
 ========================================== */
 
-.icon-youtube2 {
-	width: 2.5087890625em;
+.icon-youtube-wide {
+  width: 2.5087890625em;
 }
 
-.icon-star {
-	width: 0.9285714285714285em;
-}
-
-.icon-star-o {
-	width: 0.9285714285714285em;
+.icon-search {
+  width: 0.9285714285714285em;
 }
 
 .icon-user {
-	width: 0.7142857142857142em;
+  width: 0.7142857142857142em;
 }
 
-.icon-home {
-	width: 0.9285714285714285em;
+.icon-close {
+  width: 0.7857142857142857em;
+}
+
+.icon-home4 {
+  width: 0.9285714285714285em;
+}
+
+.icon-tag {
+  width: 0.8454285714285714em;
+}
+
+.icon-tags {
+  width: 1.0597142857142856em;
+}
+
+.icon-bookmark {
+  width: 0.7142857142857142em;
 }
 
 .icon-map-marker {
-	width: 0.5714285714285714em;
+  width: 0.5714285714285714em;
+}
+
+.icon-play {
+  width: 0.7896428571428571em;
+}
+
+.icon-pause {
+  width: 0.8571428571428571em;
 }
 
 .icon-chevron-left {
-	width: 0.75em;
+  width: 0.75em;
 }
 
 .icon-chevron-right {
-	width: 0.6785714285714285em;
+  width: 0.6785714285714285em;
 }
 
-.icon-plus-circle {
-	width: 0.8571428571428571em;
+.icon-times-circle {
+  width: 0.8571428571428571em;
 }
 
-.icon-minus-circle {
-	width: 0.8571428571428571em;
+.icon-twitter-square {
+  width: 0.8571428571428571em;
+}
+
+.icon-facebook-square {
+  width: 0.8571428571428571em;
+}
+
+.icon-linkedin-square {
+  width: 0.8571428571428571em;
 }
 
 .icon-phone {
-	width: 0.7857142857142857em;
+  width: 0.7857142857142857em;
+}
+
+.icon-phone-square {
+  width: 0.8571428571428571em;
+}
+
+.icon-twitter {
+  width: 0.9285714285714285em;
+}
+
+.icon-facebook {
+  width: 0.5881428571428571em;
+}
+
+.icon-github {
+  width: 0.8571428571428571em;
+}
+
+.icon-group {
+  width: 1.0714285714285714em;
 }
 
 .icon-pinterest {
-	width: 0.8571428571428571em;
-}
-
-.icon-google-plus {
-	width: 1.2857142857142856em;
+  width: 0.8571428571428571em;
 }
 
 .icon-caret-down {
-	width: 0.5714285714285714em;
+  width: 0.5714285714285714em;
 }
 
 .icon-caret-up {
-	width: 0.5714285714285714em;
+  width: 0.5714285714285714em;
 }
 
 .icon-caret-left {
-	width: 0.39285714285714285em;
+  width: 0.39285714285714285em;
 }
 
 .icon-caret-right {
-	width: 0.3214285714285714em;
+  width: 0.3214285714285714em;
 }
 
 .icon-sort {
-	width: 0.5714285714285714em;
-}
-
-.icon-sort-desc {
-	width: 0.5714285714285714em;
-}
-
-.icon-sort-asc {
-	width: 0.5714285714285714em;
+  width: 0.5714285714285714em;
 }
 
 .icon-linkedin {
-	width: 0.8571428571428571em;
+  width: 0.8571428571428571em;
+}
+
+.icon-angle-double-left {
+  width: 0.5892857142857143em;
+}
+
+.icon-angle-double-right {
+  width: 0.5535714285714285em;
+}
+
+.icon-angle-double-up {
+  width: 0.6428571428571428em;
+}
+
+.icon-angle-double-down {
+  width: 0.6428571428571428em;
 }
 
 .icon-angle-left {
-	width: 0.375em;
+  width: 0.375em;
 }
 
 .icon-angle-right {
-	width: 0.33928571428571425em;
+  width: 0.33928571428571425em;
 }
 
 .icon-angle-up {
-	width: 0.6428571428571428em;
+  width: 0.6428571428571428em;
 }
 
 .icon-angle-down {
-	width: 0.6428571428571428em;
+  width: 0.6428571428571428em;
 }
 
-.icon-youtube {
-	width: 0.8571428571428571em;
+.icon-github-alt {
+  width: 0.9285714285714285em;
+}
+
+.icon-code {
+  width: 1.0714285714285714em;
+}
+
+.icon-chevron-circle-left {
+  width: 0.8571428571428571em;
+}
+
+.icon-chevron-circle-right {
+  width: 0.8571428571428571em;
+}
+
+.icon-chevron-circle-up {
+  width: 0.8571428571428571em;
+}
+
+.icon-chevron-circle-down {
+  width: 0.8571428571428571em;
+}
+
+.icon-youtube-square {
+  width: 0.8571428571428571em;
+}
+
+.icon-youtube1 {
+  width: 0.8571428571428571em;
 }
 
 .icon-instagram {
-	width: 0.8571428571428571em;
+  width: 0.8571428571428571em;
 }
 
-.icon-slack {
-	width: 0.9285714285714285em;
+.icon-sliders {
+  width: 0.8571428571428571em;
 }
 
-.icon-map-pin {
-	width: 0.5714285714285714em;
+.icon-toggle-off {
+  width: 1.1428571428571428em;
+}
+
+.icon-toggle-on {
+  width: 1.1428571428571428em;
+}
+
+.icon-pinterest-p {
+  width: 0.7142857142857142em;
+}
+
+.icon-shopping-basket {
+  width: 1.1428571428571428em;
+}
+
+.icon-question-circle-o {
+  width: 0.8571428571428571em;
 }
 
 .icon-user-o {
-	width: 0.8571428571428571em;
+  width: 0.8571428571428571em;
 }
