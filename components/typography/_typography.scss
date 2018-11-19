@@ -1,9 +1,140 @@
-// wrap it all in .site-content so footers and headers are their own thing
-// no classes here, this is default stuff
-.site-content {
+// Load fonts using @font-face rules
+// typography.js will take care of everything else
+// 
+// For Google Fonts @font-face rules, simply visit the URL of the link
+// (ex. https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i )
+// 
+// Boom. There's your rules
+// 
+// IMPORTANT: You will need to edit the font-family names to make all the staging work!
+// Also, consider adding `font-display: fallback;` to all of your font-face declarations
 
-  .site-content * + * { 
-    margin-top: $base-gap; 
+// SET @FONT-FACE
+/* latin-ext */
+@font-face {
+  font-family: 'LatoItalic';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v14/S6u8w4BMUTPHjxsAUi-qNiXg7eU0.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  font-display: fallback;
+}
+
+/* latin */
+@font-face {
+  font-family: 'LatoItalic';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v14/S6u8w4BMUTPHjxsAXC-qNiXg7Q.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-display: fallback;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'LatoBoldItalic';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v14/S6u_w4BMUTPHjxsI5wq_FQftx9897sxZ.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  font-display: fallback;
+}
+
+/* latin */
+@font-face {
+  font-family: 'LatoBoldItalic';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v14/S6u_w4BMUTPHjxsI5wq_Gwftx9897g.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-display: fallback;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v14/S6uyw4BMUTPHjxAwXiWtFCfQ7A.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  font-display: fallback;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v14/S6uyw4BMUTPHjx4wXiWtFCc.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-display: fallback;
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'LatoBold';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v14/S6u9w4BMUTPHh6UVSwaPGQ3q5d0N7w.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  font-display: fallback;
+}
+
+/* latin */
+@font-face {
+  font-family: 'LatoBold';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v14/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-display: fallback;
+}
+
+// In setting baseline values, keep in mind what your CRITICAL font is (stage 1)
+// Everything else is loaded in stage 2
+// This is a fantastic tool for minimizing FOUT https://meowni.ca/font-style-matcher/
+
+
+
+  // Set your baseline here
+
+  body,
+  button,
+  input,
+  select,
+  textarea {
+    color: $offblack;
+    font-family: Tahoma, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.4px;
+    font-feature-settings: "kern", "liga", "clig", "calt"; // make it pretty
+
+
+    // Critical Stage 1 font
+    .fonts-stage-1 & {
+      font-family: 'Lato', sans-serif;
+      letter-spacing: 0;
+    }
+
+    .fonts-stage-2 & {
+      strong, b {
+        font-family: LatoBold, sans-serif;
+        font-weight: 700;
+      }
+
+      em {
+        font-family: LatoItalic, sans-serif;
+        font-style: italic;
+      }
+
+      strong em, em strong {
+        font-family: LatoBoldItalic, sans-serif;
+        font-weight: 700;
+        font-style: italic;
+      }
+
+    }
   }
   
   /*********************
@@ -141,4 +272,3 @@
   }
 
 
-} // .site-content

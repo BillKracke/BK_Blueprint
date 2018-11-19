@@ -50,25 +50,7 @@ $pink: #f012be;
 // Requires https://github.com/typekit/webfontloader
 // (Already baked in, see functions.php and theme.js)
 
-// Set your baseline here
 
-body,
-button,
-input,
-select,
-textarea {
-	color: $offblack;
-	font-family: Tahoma, sans-serif;
-	font-size: 16px;
-	line-height: 1.5;
-	letter-spacing: 0.4px;
-	font-feature-settings: "kern", "liga", "clig", "calt"; // make it pretty
-
-	.wf-active & {
-		font-family: Tahoma, sans-serif;
-		letter-spacing: 0;
-	}
-}
 
 // EASY Brand Colors - https://www.competethemes.com/blog/social-media-colors/
 // Here if you need them

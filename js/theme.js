@@ -3,4 +3,5 @@
 // you will need to concatenate and minify some other way
 //
 // @codekit-prepend "../components/typography/_typography.js"
-// @codekit-prepend "../components/navigation/_navigation.js";
+// @codekit-prepend "../components/navigation/_navigation.js"
+ 
