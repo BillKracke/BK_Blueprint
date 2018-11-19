@@ -1,6 +1,0 @@
-{
-  "files.exclude": {
-    "**/config.codekit3": true,
-    "**/.gitignore": true
-  }
-}
