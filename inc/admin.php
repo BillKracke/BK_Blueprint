@@ -24,7 +24,7 @@ function bkb_custom_dashboard_widgets() {
 function bkb_custom_dashboard_help() {
     echo '<p>Custom text/HTML here</p>';
     }
-add_action('wp_dashboard_setup', 'bkb_custom_dashboard_widgets');
+// add_action('wp_dashboard_setup', 'bkb_custom_dashboard_widgets');
 
 
 // Change Footer Text
@@ -46,8 +46,8 @@ add_filter('user_contactmethods','bkb_hide_profile_fields',10,1);
 /* REMOVE SEARCH */
 /* If you aren't using search, deactivate it for security */
 
-add_action( 'parse_query', 'bkb_filter_query' );
-add_filter( 'get_search_form', create_function( '$a', "return null;" ) );
+// add_action( 'parse_query', 'bkb_filter_query' );
+// add_filter( 'get_search_form', create_function( '$a', "return null;" ) );
 
 function bkb_filter_query( $query, $error = true ) {
     if ( is_search() ) {

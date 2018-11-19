@@ -6,4 +6,4 @@ function add_ie_html5_shim () {
     echo '<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>';
     echo '<![endif]-->';
 }
-add_action('wp_head', 'add_ie_html5_shim');
+// add_action('wp_head', 'add_ie_html5_shim');

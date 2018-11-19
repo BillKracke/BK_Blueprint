@@ -23,7 +23,7 @@ require get_template_directory() . '/inc/tweaks.php';
 /* Custom SVG Icon Library Solution */
 require get_template_directory() . '/inc/svg-icons.php';
 
-/* Support for ancient browsers, if needed */
+/* Support for ancient browsers, if needed  lt IE9 */
 // require get_template_directory() . '/inc/ancient-support.php';
 
 
@@ -98,9 +98,9 @@ add_action( 'widgets_init', 'bkb_widgets_init' );
  * Enqueue scripts and styles.
  */
 function bkb_scripts_and_styles() {
-	wp_enqueue_style( 'theme-style', get_stylesheet_uri(), array(), '170201' );
+	wp_enqueue_style( 'theme-style', get_stylesheet_uri(), array(), null );
 
-	wp_enqueue_script( 'theme-js', get_stylesheet_directory_uri() . '/js/theme-min.js', array(), '170201', true );
+	wp_enqueue_script( 'theme-js', get_stylesheet_directory_uri() . '/js/theme-min.js', array('jquery'), null , true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
