@@ -1824,13 +1824,6 @@
 		"oAP": "/template-parts/post.php",
 		"oF": 0
 		},
-	"/todo.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/todo.html",
-		"oF": 0
-		},
 	"/todo.md": {
 		"cB": 0,
 		"cS": 0,
@@ -1839,22 +1832,15 @@
 		"ema": 1,
 		"eSQ": 1,
 		"ft": 4096,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/todo.html",
-		"oF": 0,
+		"oF": 1,
 		"oFM": 0,
 		"oS": 0,
 		"pHT": 0,
 		"pME": 1,
 		"rFN": 0,
 		"uCM": 0
-		},
-	"/todo.txt": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "/todo.txt",
-		"oF": 0
 		}
 	},
 "hooks": [

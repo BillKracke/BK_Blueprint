@@ -4,4 +4,18 @@
 //
 // @codekit-prepend "../components/typography/_typography.js"
 // @codekit-prepend "../components/navigation/_navigation.js"
+
+
+/* 
+ * Accessible focus highlighting
+ */
+
+function handleFirstTab(e) {
+  if (e.keyCode === 9) { // the "I am a keyboard user" key
+    document.body.classList.add('user-is-tabbing');
+    window.removeEventListener('keydown', handleFirstTab);
+  }
+}
+
+window.addEventListener('keydown', handleFirstTab);
  
