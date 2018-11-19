@@ -18,24 +18,96 @@
 
 // Form
 $gf-padding: 0; // set outer padding on form
-$gf-bg: $color-white; // background color of form
+$gf-bg: $white; // background color of form
 $gf-border-width: 0; // border-width on form
-$gf-border-color: $color-white; // border color
+$gf-border-color: $white; // border color
 
 // Fields / Rows
 $gf-field-margin-bottom: 1.5rem; // margin between field and label below (vertical spacing between rows)
 
 // Labels
 $gf-label-font-size: 1rem;
-$gf-label-font-color: $color-mineshaft;
+$gf-label-font-color: $black;
 $gf-label-font-weight: 700;
 
 // Inputs
-$gf-input-color-background: $color-white;
-$gf-input-color-border: $color-input-border;
-$gf-input-color-text: $color-input-text;
-$gf-input-color-focus-text: $color-input-focus-text;
-$gf-input-padding: $padding-input;
+$gf-input-color-background: $white;
+$gf-input-color-border: $grey;
+$gf-input-color-text: $darkgrey;
+$gf-input-color-focus-text: $black;
+$gf-input-padding: 0.25em 0.5em;
+
+//--------------------------------------------------------------
+//	MIXINS FOR THIS TO WORK
+//--------------------------------------------------------------
+@mixin triangle($direction,
+$width,
+$height,
+$color) {
+
+  @if not index("up""up-right""right""down-right""down""down-left""left""up-left",
+  $direction) {
+    @error "Direction must be 'up',
+'up-right',
+    'right',
+    'down-right',
+    " + "'down',
+    'down-left',
+    'left'or 'up-left'";
+
+  }
+
+  @else if not _is-color($color) {
+    @error "'#{$color}' is not a valid color for the '$color' argument in "+"the 'triangle' mixin.";
+  }
+
+  @else {
+    border-style: solid;
+    height: 0;
+    width: 0;
+
+    @if $direction=="up" {
+      border-color: transparent transparent $color;
+      border-width: 0 ($width / 2) $height;
+    }
+
+    @else if $direction=="up-right" {
+      border-color: transparent $color transparent transparent;
+      border-width: 0 $width $width 0;
+    }
+
+    @else if $direction=="right" {
+      border-color: transparent transparent transparent $color;
+      border-width: ($height / 2) 0 ($height / 2) $width;
+    }
+
+    @else if $direction=="down-right" {
+      border-color: transparent transparent $color;
+      border-width: 0 0 $width $width;
+    }
+
+    @else if $direction=="down" {
+      border-color: $color transparent transparent;
+      border-width: $height ($width / 2) 0;
+    }
+
+    @else if $direction=="down-left" {
+      border-color: transparent transparent transparent $color;
+      border-width: $width 0 0 $width;
+    }
+
+    @else if $direction=="left" {
+      border-color: transparent $color transparent transparent;
+      border-width: ($height / 2) $width ($height / 2) 0;
+    }
+
+    @else if $direction=="up-left" {
+      border-color: $color transparent transparent;
+      border-width: $width $width 0 0;
+    }
+  }
+}
+
 
 //--------------------------------------------------------------
 //	BASE STYLES
@@ -164,7 +236,7 @@ $gf-input-padding: $padding-input;
 		position: absolute;
 		top: 40%;
 		right: 0.75rem;
-		@include triangle(12px, $lightgrey, down); // adjust size and color
+		@include triangle(down, 12px, 12px, $lightgrey); // adjust size and color
 
 		background: none; // hide the default chosen background
 	} // .chosen-single div b
@@ -189,7 +261,7 @@ $gf-input-padding: $padding-input;
 		} // .chosen-single
 
 		.chosen-single div b {
-			@include triangle(12px, $lightergrey, up); // adjust size and color for active icon
+			@include triangle(up, 12px, 12px, $lightergrey); // adjust size and color for active icon
 
 			border: none; // hiding the previous triangle (border)
 		} // .chosen-single div b
@@ -260,7 +332,7 @@ $gf-input-padding: $padding-input;
 
 	// Target just left column on two-column row
 	.gf_left_half {
-		@include mediabreak-under(599px) {
+		@include break-under(599px) {
 			margin-right: 2%;
 		}
 	} // .gf_left_half
