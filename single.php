@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
- * @package bkboiler
+ * @package bkblueprint
  */
 
 get_header(); ?>
