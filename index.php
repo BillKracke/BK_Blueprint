@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The main template file.
  *
@@ -14,37 +15,30 @@
 
 get_header(); ?>
 
-	<div id="primary" class="primary-content">
-		<main id="main" class="site-main" role="main">
+<div id="primary" class="content-area">
 
-		<?php
-		if ( have_posts() ) :
 
-			/* Start the Loop */
-			while ( have_posts() ) : the_post();
+  <?php
+  if (have_posts()) :
 
-				// trying something a little bit crazy here
-				// what if we moved everything into the template parts folder?
-				// check inc/extras.php -- we add the slug to body class for styling ex. page-about
-				// this way everything can libe in template parts.  Keep it tidy.
+    while (have_posts()) : the_post();
 
-				$post_type = get_post_type();
+      $post_type = get_post_type();
 
-				get_template_part( 'template-parts/' . $post_type , get_post_format() );
+      get_template_part('template-parts/' . $post_type, get_post_format());
 
-			endwhile;
+    endwhile;
 
-			the_posts_navigation();
+    the_posts_navigation();
 
-		else :
+  else :
 
-			get_template_part( 'template-parts/content', 'none' );
+    get_template_part('template-parts/content', 'none');
 
-		endif; ?>
+  endif; ?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+</div><!-- #primary -->
+<?php get_sidebar(); ?>
 
 <?php
-get_sidebar();
 get_footer();
