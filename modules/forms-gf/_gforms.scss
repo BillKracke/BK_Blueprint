@@ -1,0 +1,94 @@
+@import "icons";
+@import "variables";
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="number"],
+input[type="search"],
+input[type="url"],
+select,
+textarea {
+  background-color: $gfs-field-background-color;
+  border: $gfs-border-width $gfs-border-style $gfs-border-color;
+  border-radius: $gfs-border-radius;
+  box-shadow: $gfs-box-shadow;
+  box-sizing: border-box;
+  font-family: $gfs-field-font-family;
+  font-size: $gfs-field-font-size;
+  height: $gfs-field-height;
+  line-height: $gfs-field-line-height;
+  padding: $gfs-field-padding-y $gfs-field-padding-x;
+}
+
+textarea {
+  height: auto;
+}
+
+.gform_wrapper .gform_fields .gfield {
+  margin-bottom: 0;
+}
+
+.ginput_container {
+  margin-bottom: $gfs-form-spacing-y;
+}
+
+.ginput_container.ginput_complex {
+  margin-bottom: 0;
+}
+
+.ginput_complex > span {
+  display: block;
+  margin-bottom: $gfs-form-spacing-y;
+}
+
+.gfield_radio,
+.gfield_checkbox {
+  margin-top: 6px;
+}
+
+.gfield_radio label {
+  font-size: 95%;
+  font-weight: normal;
+  margin-left: 10px;
+}
+
+.gfield_checkbox label {
+  font-size: 95%;
+  font-weight: normal;
+  margin-left: 6px;
+}
+
+/* Labels */
+.gfield_label {
+  font-size: $gfs-label-font-size;
+  margin: 0px;
+}
+
+/* Sub Labels */
+.ginput_complex > span > label {
+  font-size: $gfs-sub-label-font-size;
+  font-weight: normal;
+  margin: 0;
+}
+
+.gfield_description {
+  font-size: $gfs-field-description-font-size;
+}
+
+/* Specific field styles imported here */
+@import "select";
+@import "date-field";
+@import "time-field";
+@import "address-field";
+@import "name-field";
+@import "file-upload-field";
+@import "credit-card-field";
+@import "css-ready-classes";
+@import "utility-classes";
+@import "errors";

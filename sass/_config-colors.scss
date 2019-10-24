@@ -1,17 +1,6 @@
 // SITE VARIABLES
 
-// Do NOT overdo it here. Variables are for things that will be reused FREQUENTLY.
-// If the standard width is 1200px, gutter 2 = 24, 3=36, 4=48
-// 1440px?  1.666 = 24, 2.5 = 36, 3.3333 = 48
-
-/* GRID */
-$jeet: (gutter: 3.3333, max-width: 1440px);
-
-$base-gap: 24px; // the faux "grid" between elements gutter could be 2x this
-
-// SITE SPECIFIC COLORS
-// Named colors are easier than "tertiary-brand"
-// Consider namespacing -  $bk-blue
+// COLORS
 
 // Standard Color Library
 // ======================
@@ -41,16 +30,6 @@ $blue: #0074d9;
 $navy: #001f3f;
 $purple: #b10dc9;
 $pink: #f012be;
-
-// a few things about the font styling below
-// if you are using Google Web fonts, use this tool to find
-// a similar web safe alternative: https://meowni.ca/font-style-matcher/
-// Put your alternative in first block, Google font in second block.
-// Alse see: https://meowni.ca/posts/web-fonts/
-// Requires https://github.com/typekit/webfontloader
-// (Already baked in, see functions.php and theme.js)
-
-
 
 // EASY Brand Colors - https://www.competethemes.com/blog/social-media-colors/
 // Here if you need them

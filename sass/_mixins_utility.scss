@@ -69,9 +69,9 @@
 ///                 minumum of 35px and maximum of 150px
 ///  @include responsive-font(5vw, 35px, 150px, 50px);
 ///
-@mixin responsive-text($responsive, $min, $max: false, $fallback: false) {
+@mixin responsive-font($responsive, $min, $max: false, $fallback: false) {
 	$responsive-unitless: $responsive / ($responsive - $responsive + 1);
-	$dimension: if(unit($responsive) == 'vh', 'height', 'width');
+	$dimension: if(unit($responsive) == "vh", "height", "width");
 	$min-breakpoint: $min / $responsive-unitless * 100;
 
 	@media (max-#{$dimension}: #{$min-breakpoint}) {
@@ -100,5 +100,27 @@
 		@return #000000; // Lighter backgorund, return dark color
 	} @else {
 		@return #ffffff; // Darker background, return light color
+	}
+}
+
+@mixin arrow($direction: down, $size: 5px, $color: #555) {
+	width: 0;
+	height: 0;
+	@if ($direction == left) {
+		border-top: $size solid transparent;
+		border-bottom: $size solid transparent;
+		border-right: $size solid $color;
+	} @else if ($direction == right) {
+		border-top: $size solid transparent;
+		border-bottom: $size solid transparent;
+		border-left: $size solid $color;
+	} @else if ($direction == down) {
+		border-left: $size solid transparent;
+		border-right: $size solid transparent;
+		border-top: $size solid $color;
+	} @else {
+		border-left: $size solid transparent;
+		border-right: $size solid transparent;
+		border-bottom: $size solid $color;
 	}
 }
