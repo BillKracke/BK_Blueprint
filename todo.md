@@ -52,3 +52,33 @@ div#page-wrapper.site-wrapper
           footer.entry-footer
     #secondary.widget-area
   footer.site-footer
+
+
+
+root
+  /template parts
+  /blocks
+    /blockname
+  /sass
+    style.scss
+    _config
+    _mixins_utility
+    _reset
+    _media
+    _typography
+    _base
+    
+  /js
+  /modules
+    /buttons
+    /forms
+    /modal
+    /navigation
+    /tables
+  /icons
+  /layout
+    footer
+    header
+    content
+    exceptions
+

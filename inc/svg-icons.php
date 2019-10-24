@@ -12,8 +12,8 @@
  * @param  $icon_name   string after 'icon-'' in icomoon
  * @return string       SVG use call to svg sprite in /svg/
  */
-function bkb_icon($icon_name) {
+function bkb_icon($icon_name)
+{
 
-  include get_stylesheet_directory() . '/components/icons/' . $icon_name . '.svg';  
-  
-  }
+  include get_stylesheet_directory() . '/icons/' . $icon_name . '.svg';
+}
