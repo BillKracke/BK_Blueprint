@@ -1,0 +1,71 @@
+$button-colors: (
+	default: (
+		bg: $lightgrey,
+		border: $lightgrey,
+		text: contrasting-text-color($grey),
+		hover-bg: darken($lightgrey, 15%),
+		hover-border: darken($lightgrey, 15%),
+		hover-text: contrasting-text-color(darken($lightgrey, 15%))
+	)
+);
+
+.button {
+	padding: 0.25em 1em;
+	display: inline-block;
+	text-decoration: none;
+	border-radius: 2px;
+	transition: all 0.3s ease;
+	border-width: 2px;
+	border-style: solid;
+
+	&.small {
+		font-size: 85%;
+	}
+	&.large {
+		font-size: 120%;
+	}
+	&.narrow {
+		padding: 0.25em 0.5em;
+	}
+	&.wide {
+		padding: 0.25em 2em;
+	}
+	&.full-width {
+		display: block;
+		width: 100%;
+		text-align: center;
+		margin: 1em 0;
+	}
+}
+
+.button {
+	background-color: map-deep-get($button-colors, default, bg);
+	color: map-deep-get($button-colors, default, text);
+	border-color: map-deep-get($button-colors, default, border);
+
+	&:hover {
+		background-color: map-deep-get($button-colors, default, hover-bg);
+		color: map-deep-get($button-colors, default, hover-text);
+		border-color: map-deep-get($button-colors, default, hover-border);
+	}
+}
+@each $color, $color-map in $button-colors {
+	.button-#{$color} {
+		background-color: map-get(#{$color-map}, bg);
+		color: map-get(#{$color-map}, text);
+		border-color: map-get(#{$color-map}, border);
+
+		&:hover {
+			background-color: map-get(#{$color-map}, hover-bg);
+			color: map-get(#{$color-map}, hover-text);
+			border-color: map-get(#{$color-map}, hover-border);
+		}
+	}
+}
+
+body:not(.user-is-tabbing) button:focus,
+body:not(.user-is-tabbing) input:focus,
+body:not(.user-is-tabbing) select:focus,
+body:not(.user-is-tabbing) textarea:focus {
+	outline: none;
+}
