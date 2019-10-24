@@ -28,6 +28,18 @@
 	@include visually-hidden;
 }
 
+.content-width {
+	max-width: $content-width;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.menu-width {
+	max-width: $menu-width;
+	margin-right: auto;
+	margin-left: auto;
+}
+
 // RESPONSIVE BREAKPOINTS
 // From the pretty brilliant article - https://medium.freecodecamp.com/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862
 //

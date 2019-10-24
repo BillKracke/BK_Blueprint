@@ -7,29 +7,8 @@ Description: Custom WordPress theme
 This the is using the following tools/technologies:
 - CodeKit
 - SASS(SCSS)
-- Jeet (for grids)
 
 */
-
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-# Variables & Colors
-# Utilities & Mixins
-# Base
-    - typography
-    - links
-    - headings
-    - other elements
-# Components
-  ## buttons
-  ## forms
-  ## media
-# Modules
-  ## Navigation
-  ## widgets
-# Layouts
---------------------------------------------------------------*/
 
 // CONFIG
 @import "sass/config";
@@ -38,24 +17,17 @@ This the is using the following tools/technologies:
 @import "sass/reset";
 
 /* Utility Classes*/
-// and mixins
 @import "sass/mixins_utility";
 
-// Grid system -- see also _config.scss
-// this is coming from codekit
-@import "jeet"; //replaces grid.scss
-
-/* BASELINE STUFF */
 /* Typography & Links */
-@import "components/typography/typography";
+@import "sass/typography";
 
 /* Tables */
-@import "components/tables/tables";
+@import "modules/tables/tables";
 
 /* Forms */
-@import "components/gravity-forms/forms";
+@import "modules/forms-gf/gforms";
 
-/* COMPONENTS */
 /* media */
 @import "components/media/media";
 
@@ -73,5 +45,3 @@ This the is using the following tools/technologies:
 @import "layout/page";
 @import "layout/page-specific";
 @import "layout/footer";
-
-

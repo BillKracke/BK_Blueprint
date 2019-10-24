@@ -1,0 +1,118 @@
+// Set your baseline here
+
+body,
+button,
+input,
+select,
+textarea {
+	color: $offblack;
+	font-family: Tahoma, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	font-feature-settings: "kern", "liga", "clig", "calt"; // make it pretty
+}
+
+/*********************
+  LINK STYLES
+  *********************/
+
+a,
+a:visited {
+	color: $blue;
+	transition: all 0.3s ease;
+
+	/* on hover */
+	&:hover,
+	&:focus {
+		color: $red;
+		transition: all 0.3s ease;
+	}
+
+	/* on click */
+	&:active {
+	}
+
+	/* mobile tap color */
+	&:link {
+		/*
+      this highlights links on iPhones/iPads.
+      so it basically works like the :hover selector
+      for mobile devices.
+      */
+		-webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
+	}
+}
+
+/******************************************************************
+  H1, H2, H3, H4, H5 STYLES
+  ******************************************************************/
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+	text-rendering: optimizelegibility;
+
+	/* removing text decoration from all headline links */
+	a {
+		text-decoration: none;
+		color: inherit;
+	}
+}
+
+h1,
+.h1 {
+}
+
+h2,
+.h2 {
+}
+
+h3,
+.h3 {
+}
+
+h4,
+.h4 {
+}
+
+h5,
+.h5 {
+}
+
+h6,
+.h6 {
+}
+
+//
+// Other Text Elements
+// ==========================================================================
+
+abbr[title] {
+	border-bottom: 1px dotted; // FIX
+	text-decoration: none; // FIX
+}
+
+code,
+kbd,
+pre,
+samp {
+	font-family: monospace, monospace; // FIX
+	font-size: 1em; // FIX
+}
+
+hr {
+	height: 0; // FIX
+	overflow: visible; // FIX
+}
+
+blockquote {
+}

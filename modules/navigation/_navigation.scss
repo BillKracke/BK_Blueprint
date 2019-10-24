@@ -74,7 +74,7 @@
 	display: block;
 }
 
-@include break-under(600px) {
+@include break-over(599px) {
 	.menu-toggle {
 		display: none;
 	}
