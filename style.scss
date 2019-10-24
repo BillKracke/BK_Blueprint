@@ -29,19 +29,20 @@ This the is using the following tools/technologies:
 @import "modules/forms-gf/gforms";
 
 /* media */
-@import "components/media/media";
+@import "sass/media";
 
 /* buttons */
-@import "components/buttons/buttons";
+@import "modules/buttons/buttons";
 
 /* icons */
-@import "components/icons/icons";
+@import "icons/icons";
 
 /* navigation */
-@import "components/navigation/navigation";
+@import "modules/navigation/navigation";
 
 /* LAYOUT */
 @import "layout/header";
 @import "layout/page";
-@import "layout/page-specific";
+
 @import "layout/footer";
+@import "layout/exceptions";

@@ -51,14 +51,14 @@ $button-colors: (
 }
 @each $color, $color-map in $button-colors {
 	.button-#{$color} {
-		background-color: map-get(#{$color-map}, bg);
-		color: map-get(#{$color-map}, text);
-		border-color: map-get(#{$color-map}, border);
+		background-color: map-get($color-map, bg);
+		color: map-get($color-map, text);
+		border-color: map-get($color-map, border);
 
 		&:hover {
-			background-color: map-get(#{$color-map}, hover-bg);
-			color: map-get(#{$color-map}, hover-text);
-			border-color: map-get(#{$color-map}, hover-border);
+			background-color: map-get($color-map, hover-bg);
+			color: map-get($color-map, hover-text);
+			border-color: map-get($color-map, hover-border);
 		}
 	}
 }
