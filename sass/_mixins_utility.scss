@@ -12,6 +12,11 @@
 	}
 }
 
+@mixin block-center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
 //VISUALLY HIDE (a11y)
 @mixin visually-hidden {
 	border: 0;
